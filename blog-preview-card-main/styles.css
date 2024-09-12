@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Figtree", sans-serif;
+}
+
+main {
+  background-color: hsl(47, 88%, 63%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.tile {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1em;
+  width: 382px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  border: 1px solid black;
+  box-shadow: 10px 8px 0px rgba(0, 0, 0, 1);
+  transition: transform 0.5s ease-in-out;
+}
+
+#imgTop {
+  padding: 20px;
+  border-radius: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding-left: 25px;
+  margin-top: 5px;
+}
+
+h2 {
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 800;
+  text-align: left;
+  border-radius: 5px;
+  width: 85px;
+  font-size: 16px;
+  text-align: center;
+  padding: 6px 12px;
+  font-stretch: narrower;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 14px;
+  font-stretch: narrower;
+  margin-top: 10px;
+}
+
+section {
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 17px;
+}
+
+section h1 {
+  font-size: 23px;
+  font-weight: 950;
+}
+section h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+section p {
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 20px;
+  color: hsl(0, 0%, 42%);
+}
+
+footer {
+  padding-top: 25px;
+  text-align: left;
+}
+
+footer div {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+footer div img {
+  width: 32px;
+  margin-right: 10px;
+}
+
+footer div p {
+  margin: 0;
+  line-height: 1;
+  font-size: small;
+  font-weight: 800;
+}
+
+@media (max-width: 1440px) {
+  .tile {
+    max-width: 382px;
+  }
+}
+@media (max-width: 490px), (max-height: 568px) {
+  .tile {
+    transform: scale(0.7);
+    transform-origin: center;
+  }
+}
